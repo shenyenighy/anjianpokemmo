@@ -1,0 +1,3397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>神梦插件v1.5.0.0 【QQ群：624655641】</title>
+    <script type="text/javascript" src="http://www.vrbrothers.com/cn/qmacro/qmdn/scripts/shCore.js" charset="gbk"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.vrbrothers.com/cn/qmacro/qmdn/css/SyntaxHighlighter.css">
+    <link rel="stylesheet" type="text/css" href="http://www.vrbrothers.com/cn/qmacro/qmdn/css/help.css">
+    <style>
+    body{font-size:12px; font-family:Verdana,"宋体"}
+    .ts{ background:#fff; margin:0 0 40px 0;}
+    .ts th{ color:#7B797B; background:#DEDFDE; line-height:24px;}
+    .ts td {padding:6px 0;}
+    .name { font-size:16px; font-weight:bold; border-top:1px dashed #9C9A9C; border-bottom:1px dashed #9C9A9C; color:#006939;}
+    .canshu { background:#E7E7EF;}
+    .red{ color:#d60000;}
+    .green{ color:#006939;}
+    .fanhui{ border-bottom:1px dashed #9C9A9C;}
+    .lizi{ border-bottom:1px dashed #9C9A9C;}
+
+    /* Language specific styles */
+    /*
+      comment 为注释代码着色
+      string  为字符串文字着色
+      keyword 为关键字着色
+      preprocessor 自定义规则着色
+    */
+    .dp-highlighter .comment, .dp-highlighter .comments { color: darkgreen; background-color: inherit; }
+    .dp-highlighter .string { color: darkgray; background-color: inherit; }
+    .dp-highlighter .keyword { color: #0000FF; font-weight: bold; background-color: inherit; }
+    .dp-highlighter .preprocessor { color: #FF00FF; background-color: inherit; }
+    </style>
+</head>
+<body>	
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>模板作者：</th><td class='name'>
+<a name='SMWH'></a><span Style='color:#FF00FF;'>HTML模板----神梦无痕·提供</span>
+</td></tr><tr><th>功能说明：</th><td>
+<span Style='color:#006939;'>不用再为插件没说明文档而烦恼了，HTML轻松自动生成，插件在哪，说明html就跟到哪</span>
+
+</td></tr><tr><th>联系方式：</th><td class='canshu'><pre>
+联系QQ：<a href="tencent://message/?Menu=yes&uin=1042207232&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45" alt="神梦无痕" title="神梦无痕"><U>1042207232</U></a><br>
+交流Q群：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c2a1d4064a19ccc5a1ee4d05b5608e164c9371f4589aab48f73e291f6a1295cd"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="按键易语言TC放单群 584781753" title="按键易语言TC放单群 584781753"></a>
+
+</td></tr><tr><th>业务范围：</th><td class='fanhui'>
+<span Style='color:#0000FF;'><B>专业定制PC，安卓，苹果，模拟器，办公，Post注册等模拟操作，解放双手，轻松搞定！</B></span>
+
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMWH" class="vb" id="code8_SMWH">
+无
+</td></tr></table>	
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='A_Fee'></a>A_Fee 打赏作者
+</td></tr><tr><th>命令功能：</th><td>
+打赏作者
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：变体型，QQ：1042207232
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+变体型，谢谢！
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_A_Fee" class="vb" id="code8_A_Fee">
+' 打赏作者
+Dim QQ：1042207232, 谢谢！
+谢谢！ = Plugin.SMWH.A_Fee(QQ：1042207232)
+TracePrint 谢谢！
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Ver'></a>Ver 取插件版本
+</td></tr><tr><th>命令功能：</th><td>
+取插件版本
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，版本号
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Ver" class="vb" id="code8_Ver">
+' 取插件版本
+Dim 版本号
+版本号 = Plugin.SMWH.Ver()
+TracePrint 版本号
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetBasePath'></a>GetBasePath 取插件路径
+</td></tr><tr><th>命令功能：</th><td>
+取插件路径
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，路径
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetBasePath" class="vb" id="code8_GetBasePath">
+' 取插件路径
+Dim 路径
+路径 = Plugin.SMWH.GetBasePath()
+TracePrint 路径
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetDOS'></a>GetDOS 获取DOS执行结果
+</td></tr><tr><th>命令功能：</th><td>
+获取DOS执行结果
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，命令行
+参数2【可选】：长整型，超时毫秒，默认 20000
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，执行结果
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetDOS" class="vb" id="code8_GetDOS">
+' 获取DOS执行结果
+Dim 命令行, 执行结果
+执行结果 = Plugin.SMWH.GetDOS(命令行, 20000)
+TracePrint 执行结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SetData'></a>SetData 设置剪切板中的图片
+</td></tr><tr><th>命令功能：</th><td>
+设置剪切板中的图片
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，图片路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SetData" class="vb" id="code8_SetData">
+' 设置剪切板中的图片
+Dim 图片路径, 是否成功
+是否成功 = Plugin.SMWH.SetData(图片路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetData'></a>GetData 保存剪切板中的图片
+</td></tr><tr><th>命令功能：</th><td>
+保存剪切板中的图片
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，保存路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字节集，字节集数据
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetData" class="vb" id="code8_GetData">
+' 保存剪切板中的图片
+Dim 保存路径, 字节集数据
+字节集数据 = Plugin.SMWH.GetData(保存路径)
+TracePrint 字节集数据
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Md5'></a>Md5 Md5字符串加密
+</td></tr><tr><th>命令功能：</th><td>
+Md5字符串加密
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，字符串
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，特征字符
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Md5" class="vb" id="code8_Md5">
+' Md5字符串加密
+Dim 字符串, 特征字符
+特征字符 = Plugin.SMWH.Md5(字符串)
+TracePrint 特征字符
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Md5_File'></a>Md5_File Md5文件加密
+</td></tr><tr><th>命令功能：</th><td>
+Md5文件加密
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文件路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，特征字符
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Md5_File" class="vb" id="code8_Md5_File">
+' Md5文件加密
+Dim 文件路径, 特征字符
+特征字符 = Plugin.SMWH.Md5_File(文件路径)
+TracePrint 特征字符
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetJSON'></a>GetJSON 解析JSON取值
+</td></tr><tr><th>命令功能：</th><td>
+解析JSON取值
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，JSON字符串
+参数2【必选】：字符型，键名
+参数3【可选】：长整型，返回节点数
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，键值
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetJSON" class="vb" id="code8_GetJSON">
+' 解析JSON取值
+Dim JSON字符串, 键名, 返回节点数, 键值
+键值 = Plugin.SMWH.GetJSON(JSON字符串, 键名, 返回节点数)
+TracePrint 键值
+返回节点数 = Plugin.SMWH.GetRefVal("GetJSON", 3)
+TracePrint 返回节点数
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SetJSON'></a>SetJSON 设置JSON键值
+</td></tr><tr><th>命令功能：</th><td>
+设置JSON键值
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，JSON字符串
+参数2【必选】：字符型，键名
+参数3【必选】：字符型，键值
+参数4【可选】：长整型，值类型，默认 0=字符型， 1=数值型、2=对象型、3=逻辑型
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，JSON字符串
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SetJSON" class="vb" id="code8_SetJSON">
+' 设置JSON键值
+Dim JSON字符串, 键名, 键值, JSON字符串
+JSON字符串 = Plugin.SMWH.SetJSON(JSON字符串, 键名, 键值, 0)
+TracePrint JSON字符串
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='StrToBin'></a>StrToBin 文本到字节集
+</td></tr><tr><th>命令功能：</th><td>
+文本到字节集
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文本
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字节集，字节集
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_StrToBin" class="vb" id="code8_StrToBin">
+' 文本到字节集
+Dim 文本, 字节集
+字节集 = Plugin.SMWH.StrToBin(文本)
+TracePrint 字节集
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='BinToStr'></a>BinToStr 字节集到文本
+</td></tr><tr><th>命令功能：</th><td>
+字节集到文本
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字节集，字节集
+参数2【可选】：字符型，字符编码，默认 “GB2312”， UTF-8、UTF-16、UNICODE、GBK、GB18030、BIG5、ASCII
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，文本
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_BinToStr" class="vb" id="code8_BinToStr">
+' 字节集到文本
+Dim 字节集, 文本
+文本 = Plugin.SMWH.BinToStr(字节集, "GB2312")
+TracePrint 文本
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='ByteAdd'></a>ByteAdd 字节集连接
+</td></tr><tr><th>命令功能：</th><td>
+字节集连接
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字节集，字节集1
+参数2【必选】：字节集，字节集2
+参数3【可选】：字节集，字节集3
+参数4【可选】：字节集，字节集4
+参数5【可选】：字节集，字节集5
+参数6【可选】：字节集，字节集6
+参数7【可选】：字节集，字节集7
+参数8【可选】：字节集，字节集8
+参数9【可选】：字节集，字节集9
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字节集，合并数据
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_ByteAdd" class="vb" id="code8_ByteAdd">
+' 字节集连接
+Dim 字节集1, 字节集2, 字节集3, 字节集4, 字节集5, 字节集6, 字节集7, 字节集8, 字节集9, 合并数据
+合并数据 = Plugin.SMWH.ByteAdd(字节集1, 字节集2, 字节集3, 字节集4, 字节集5, 字节集6, 字节集7, 字节集8, 字节集9)
+TracePrint 合并数据
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='ReadByte'></a>ReadByte 读入文件字节集
+</td></tr><tr><th>命令功能：</th><td>
+读入文件字节集
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文件路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字节集，字节集
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_ReadByte" class="vb" id="code8_ReadByte">
+' 读入文件字节集
+Dim 文件路径, 字节集
+字节集 = Plugin.SMWH.ReadByte(文件路径)
+TracePrint 字节集
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SaveFile'></a>SaveFile 写到文件
+</td></tr><tr><th>命令功能：</th><td>
+写到文件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，保存路径
+参数2【必选】：字节集，写入数据
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SaveFile" class="vb" id="code8_SaveFile">
+' 写到文件
+Dim 保存路径, 写入数据
+Call Plugin.SMWH.SaveFile(保存路径, 写入数据)
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='ReadHex'></a>ReadHex 读入文件16进制
+</td></tr><tr><th>命令功能：</th><td>
+读入文件16进制
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文件路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，16进制
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_ReadHex" class="vb" id="code8_ReadHex">
+' 读入文件16进制
+Dim 文件路径, 16进制
+16进制 = Plugin.SMWH.ReadHex(文件路径)
+TracePrint 16进制
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='BinToHex'></a>BinToHex 字节集到16进制
+</td></tr><tr><th>命令功能：</th><td>
+字节集到16进制
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字节集，字节集
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，16进制
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_BinToHex" class="vb" id="code8_BinToHex">
+' 字节集到16进制
+Dim 字节集, 16进制
+16进制 = Plugin.SMWH.BinToHex(字节集)
+TracePrint 16进制
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='HexToBin'></a>HexToBin 16进制到字节集
+</td></tr><tr><th>命令功能：</th><td>
+16进制到字节集
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，16进制
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字节集，字节集
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_HexToBin" class="vb" id="code8_HexToBin">
+' 16进制到字节集
+Dim 16进制, 字节集
+字节集 = Plugin.SMWH.HexToBin(16进制)
+TracePrint 字节集
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Base64'></a>Base64 Base64编码
+</td></tr><tr><th>命令功能：</th><td>
+Base64编码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：变体型，字符串或字节集
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，B64编码
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Base64" class="vb" id="code8_Base64">
+' Base64编码
+Dim 字符串或字节集, B64编码
+B64编码 = Plugin.SMWH.Base64(字符串或字节集)
+TracePrint B64编码
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='UnBase64'></a>UnBase64 Base64解码
+</td></tr><tr><th>命令功能：</th><td>
+Base64解码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，B64编码
+参数2【可选】：逻辑型，是否字节集，默认 False
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+变体型，解码数据
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_UnBase64" class="vb" id="code8_UnBase64">
+' Base64解码
+Dim B64编码, 解码数据
+解码数据 = Plugin.SMWH.UnBase64(B64编码, False)
+TracePrint 解码数据
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Base64_File'></a>Base64_File Base64文件编码
+</td></tr><tr><th>命令功能：</th><td>
+Base64文件编码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文件路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，B64编码
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Base64_File" class="vb" id="code8_Base64_File">
+' Base64文件编码
+Dim 文件路径, B64编码
+B64编码 = Plugin.SMWH.Base64_File(文件路径)
+TracePrint B64编码
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='UnBase64_File'></a>UnBase64_File Base64文件解码
+</td></tr><tr><th>命令功能：</th><td>
+Base64文件解码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，B64编码
+参数2【必选】：字符型，保存路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_UnBase64_File" class="vb" id="code8_UnBase64_File">
+' Base64文件解码
+Dim B64编码, 保存路径, 是否成功
+是否成功 = Plugin.SMWH.UnBase64_File(B64编码, 保存路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='RegExp'></a>RegExp 正则表达式
+</td></tr><tr><th>命令功能：</th><td>
+正则表达式
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：变体型，内容
+参数2【必选】：变体型，表达式
+参数3【可选】：变体型，返回数组
+参数4【可选】：逻辑型，忽略大小写，默认 True
+参数5【可选】：逻辑型，是否多行，默认 True
+参数6【可选】：逻辑型，全局匹配，默认 True
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否匹配
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_RegExp" class="vb" id="code8_RegExp">
+' 正则表达式
+Dim 内容, 表达式, 返回数组, 是否匹配
+是否匹配 = Plugin.SMWH.RegExp(内容, 表达式, 返回数组, True, True, True)
+TracePrint 是否匹配
+返回数组 = Plugin.SMWH.GetRefVal("RegExp", 3)
+TracePrint 返回数组
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='WinHttp'></a>WinHttp 访问网页
+</td></tr><tr><th>命令功能：</th><td>
+访问网页
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，网址
+参数2【可选】：长整型，访问方式，默认 0=GET， 1=POST、2=HEAD
+参数3【可选】：变体型，提交信息
+参数4【可选】：字符型，提交Cookies
+参数5【可选】：字符型，返回Cookies
+参数6【可选】：字符型，附加协议头
+参数7【可选】：字符型，返回协议头
+参数8【可选】：逻辑型，禁止重定向，默认 False
+参数9【可选】：字符型，代理地址
+参数10【可选】：字符型，用户名
+参数11【可选】：字符型，密码
+参数12【可选】：长整型，代理标识，默认 1， 2
+参数13【可选】：长整型，超时秒，默认 0
+参数14【可选】：字符型，网页编码，默认 “GB2312”， UTF-8、UTF-16、UNICODE、GBK、GB18030、BIG5、ASCII
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，网页源码
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_WinHttp" class="vb" id="code8_WinHttp">
+' 访问网页
+Dim 网址, 提交信息, 提交Cookies, 返回Cookies, 附加协议头, 返回协议头, 代理地址, 用户名, 密码, 网页源码
+网页源码 = Plugin.SMWH.WinHttp(网址, 0, 提交信息, 提交Cookies, 返回Cookies, 附加协议头, 返回协议头, False, 代理地址, 用户名, 密码, 1, 0, "GB2312")
+TracePrint 网页源码
+返回Cookies = Plugin.SMWH.GetRefVal("WinHttp", 5)
+TracePrint 返回Cookies
+返回协议头 = Plugin.SMWH.GetRefVal("WinHttp", 7)
+TracePrint 返回协议头
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetIPOS'></a>GetIPOS 查询IP地理位置
+</td></tr><tr><th>命令功能：</th><td>
+查询IP地理位置
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，IP
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，IP位置
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetIPOS" class="vb" id="code8_GetIPOS">
+' 查询IP地理位置
+Dim IP, IP位置
+IP位置 = Plugin.SMWH.GetIPOS(IP)
+TracePrint IP位置
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Execute'></a>Execute 运行VBS代码
+</td></tr><tr><th>命令功能：</th><td>
+运行VBS代码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，VBS代码
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Execute" class="vb" id="code8_Execute">
+' 运行VBS代码
+Dim VBS代码
+Call Plugin.SMWH.Execute(VBS代码)
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Eval'></a>Eval 运行VBS代码带返回值
+</td></tr><tr><th>命令功能：</th><td>
+运行VBS代码带返回值
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：变体型，VBS代码或对象
+参数2【可选】：变体型，参数1
+参数3【可选】：变体型，参数2
+参数4【可选】：变体型，参数3
+参数5【可选】：变体型，参数4
+参数6【可选】：变体型，参数5
+参数7【可选】：变体型，参数6
+参数8【可选】：变体型，参数7
+参数9【可选】：变体型，参数8
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+变体型，执行结果
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Eval" class="vb" id="code8_Eval">
+' 运行VBS代码带返回值
+Dim VBS代码或对象, 参数1, 参数2, 参数3, 参数4, 参数5, 参数6, 参数7, 参数8, 执行结果
+执行结果 = Plugin.SMWH.Eval(VBS代码或对象, 参数1, 参数2, 参数3, 参数4, 参数5, 参数6, 参数7, 参数8)
+TracePrint 执行结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Escape'></a>Escape 字符编码
+</td></tr><tr><th>命令功能：</th><td>
+字符编码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，字符
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回编码
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Escape" class="vb" id="code8_Escape">
+' 字符编码
+Dim 字符, 返回编码
+返回编码 = Plugin.SMWH.Escape(字符)
+TracePrint 返回编码
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='UnEscape'></a>UnEscape 字符解码
+</td></tr><tr><th>命令功能：</th><td>
+字符解码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，字符编码
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回解码
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_UnEscape" class="vb" id="code8_UnEscape">
+' 字符解码
+Dim 字符编码, 返回解码
+返回解码 = Plugin.SMWH.UnEscape(字符编码)
+TracePrint 返回解码
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='EscapeURL'></a>EscapeURL URL编码
+</td></tr><tr><th>命令功能：</th><td>
+URL编码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，URL
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回编码
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_EscapeURL" class="vb" id="code8_EscapeURL">
+' URL编码
+Dim URL, 返回编码
+返回编码 = Plugin.SMWH.EscapeURL(URL)
+TracePrint 返回编码
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='UnEscapeURL'></a>UnEscapeURL URL解码
+</td></tr><tr><th>命令功能：</th><td>
+URL解码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，URL编码
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回解码
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_UnEscapeURL" class="vb" id="code8_UnEscapeURL">
+' URL解码
+Dim URL编码, 返回解码
+返回解码 = Plugin.SMWH.UnEscapeURL(URL编码)
+TracePrint 返回解码
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetRange'></a>GetRange 取远程文件大小
+</td></tr><tr><th>命令功能：</th><td>
+取远程文件大小
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，网址
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+长整型，文件大小
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetRange" class="vb" id="code8_GetRange">
+' 取远程文件大小
+Dim 网址, 文件大小
+文件大小 = Plugin.SMWH.GetRange(网址)
+TracePrint 文件大小
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='TakeQQ'></a>TakeQQ 判断QQ是否登录
+</td></tr><tr><th>命令功能：</th><td>
+判断QQ是否登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，QQ
+参数2【可选】：字符型，返回已登QQ
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否登录
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_TakeQQ" class="vb" id="code8_TakeQQ">
+' 判断QQ是否登录
+Dim QQ, 返回已登QQ, 是否登录
+是否登录 = Plugin.SMWH.TakeQQ(QQ, 返回已登QQ)
+TracePrint 是否登录
+返回已登QQ = Plugin.SMWH.GetRefVal("TakeQQ", 2)
+TracePrint 返回已登QQ
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Encrypt'></a>Encrypt 对称加解密
+</td></tr><tr><th>命令功能：</th><td>
+对称加解密
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，加解密字符串
+参数2【必选】：长整型，秘钥
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，加解密数据
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Encrypt" class="vb" id="code8_Encrypt">
+' 对称加解密
+Dim 加解密字符串, 秘钥, 加解密数据
+加解密数据 = Plugin.SMWH.Encrypt(加解密字符串, 秘钥)
+TracePrint 加解密数据
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='AES'></a>AES AES加解密字符串
+</td></tr><tr><th>命令功能：</th><td>
+AES加解密字符串
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，字符串
+参数2【必选】：字符型，秘钥
+参数3【可选】：长整型，密码长度，默认 128， 160、192、224、256
+参数4【可选】：长整型，加解密选择，默认 0=加密， 1=解密
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，加解密数据
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_AES" class="vb" id="code8_AES">
+' AES加解密字符串
+Dim 字符串, 秘钥, 加解密数据
+加解密数据 = Plugin.SMWH.AES(字符串, 秘钥, 128, 0)
+TracePrint 加解密数据
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='AES_File'></a>AES_File AES加解密文件
+</td></tr><tr><th>命令功能：</th><td>
+AES加解密文件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，加解密文件
+参数2【必选】：字符型，目标文件
+参数3【必选】：字符型，秘钥
+参数4【可选】：长整型，密码长度，默认 128， 160、192、224、256
+参数5【可选】：长整型，加解密选择，默认 0=加密， 1=解密
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_AES_File" class="vb" id="code8_AES_File">
+' AES加解密文件
+Dim 加解密文件, 目标文件, 秘钥, 是否成功
+是否成功 = Plugin.SMWH.AES_File(加解密文件, 目标文件, 秘钥, 128, 0)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='IMG_Conve'></a>IMG_Conve 图片格式转换
+</td></tr><tr><th>命令功能：</th><td>
+图片格式转换
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，图片路径
+参数2【必选】：字符型，目标路径
+参数3【必选】：字符型，目标格式，默认 “BMP”， PNG、GIF、JPG、TIFF
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_IMG_Conve" class="vb" id="code8_IMG_Conve">
+' 图片格式转换
+Dim 图片路径, 目标路径
+Call Plugin.SMWH.IMG_Conve(图片路径, 目标路径, "BMP")
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='IMG_Scale'></a>IMG_Scale 图片尺寸缩放
+</td></tr><tr><th>命令功能：</th><td>
+图片尺寸缩放
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，图片路径
+参数2【必选】：字符型，目标路径
+参数3【必选】：长整型，目标宽度
+参数4【必选】：长整型，目标高度
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_IMG_Scale" class="vb" id="code8_IMG_Scale">
+' 图片尺寸缩放
+Dim 图片路径, 目标路径, 目标宽度, 目标高度
+Call Plugin.SMWH.IMG_Scale(图片路径, 目标路径, 目标宽度, 目标高度)
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetCommLine'></a>GetCommLine 获取自身命令行参数
+</td></tr><tr><th>命令功能：</th><td>
+获取自身命令行参数
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，命令行参数
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetCommLine" class="vb" id="code8_GetCommLine">
+' 获取自身命令行参数
+Dim 命令行参数
+命令行参数 = Plugin.SMWH.GetCommLine()
+TracePrint 命令行参数
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetMeHwnd'></a>GetMeHwnd 获取自身窗口句柄
+</td></tr><tr><th>命令功能：</th><td>
+获取自身窗口句柄
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+长整型，窗口句柄
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetMeHwnd" class="vb" id="code8_GetMeHwnd">
+' 获取自身窗口句柄
+Dim 窗口句柄
+窗口句柄 = Plugin.SMWH.GetMeHwnd()
+TracePrint 窗口句柄
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetHwndByPID'></a>GetHwndByPID 通过PID获取窗口句柄
+</td></tr><tr><th>命令功能：</th><td>
+通过PID获取窗口句柄
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：长整型，PID
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+长整型，窗口句柄
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetHwndByPID" class="vb" id="code8_GetHwndByPID">
+' 通过PID获取窗口句柄
+Dim PID, 窗口句柄
+窗口句柄 = Plugin.SMWH.GetHwndByPID(PID)
+TracePrint 窗口句柄
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='IsDebug'></a>IsDebug 判断按键精灵是否调试状态
+</td></tr><tr><th>命令功能：</th><td>
+判断按键精灵是否调试状态
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否调试
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_IsDebug" class="vb" id="code8_IsDebug">
+' 判断按键精灵是否调试状态
+Dim 是否调试
+是否调试 = Plugin.SMWH.IsDebug()
+TracePrint 是否调试
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Update'></a>Update 自动更新升级
+</td></tr><tr><th>命令功能：</th><td>
+自动更新升级
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，新版本号
+参数2【必选】：字符型，更新地址
+参数3【必选】：字符型，更新内容
+参数4【必选】：逻辑型，是否强制更新
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Update" class="vb" id="code8_Update">
+' 自动更新升级
+Dim 新版本号, 更新地址, 更新内容, 是否强制更新, 返回结果
+返回结果 = Plugin.SMWH.Update(新版本号, 更新地址, 更新内容, 是否强制更新)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='RegRead'></a>RegRead 读取注册表值
+</td></tr><tr><th>命令功能：</th><td>
+读取注册表值
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，注册表路径
+参数2【可选】：变体型，默认值
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+变体型，读取结果
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_RegRead" class="vb" id="code8_RegRead">
+' 读取注册表值
+Dim 注册表路径, 默认值, 读取结果
+读取结果 = Plugin.SMWH.RegRead(注册表路径, 默认值)
+TracePrint 读取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='RegWrite'></a>RegWrite 写入注册表值
+</td></tr><tr><th>命令功能：</th><td>
+写入注册表值
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，注册表路径
+参数2【必选】：变体型，写入值
+参数3【可选】：长整型，数据类型
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_RegWrite" class="vb" id="code8_RegWrite">
+' 写入注册表值
+Dim 注册表路径, 写入值, 数据类型, 是否成功
+是否成功 = Plugin.SMWH.RegWrite(注册表路径, 写入值, 数据类型)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='RegDelete'></a>RegDelete 删除注册表值
+</td></tr><tr><th>命令功能：</th><td>
+删除注册表值
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，注册表路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_RegDelete" class="vb" id="code8_RegDelete">
+' 删除注册表值
+Dim 注册表路径, 是否成功
+是否成功 = Plugin.SMWH.RegDelete(注册表路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='OnStartAdd'></a>OnStartAdd 添加自启动项
+</td></tr><tr><th>命令功能：</th><td>
+添加自启动项
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：变体型，名称
+参数2【必选】：变体型，程序路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_OnStartAdd" class="vb" id="code8_OnStartAdd">
+' 添加自启动项
+Dim 名称, 程序路径, 是否成功
+是否成功 = Plugin.SMWH.OnStartAdd(名称, 程序路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='OnStartDel'></a>OnStartDel 删除自启动项
+</td></tr><tr><th>命令功能：</th><td>
+删除自启动项
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：变体型，名称
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_OnStartDel" class="vb" id="code8_OnStartDel">
+' 删除自启动项
+Dim 名称, 是否成功
+是否成功 = Plugin.SMWH.OnStartDel(名称)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='IsOnStart'></a>IsOnStart 判断自启动项
+</td></tr><tr><th>命令功能：</th><td>
+判断自启动项
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：变体型，名称
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否存在：存在=1；不存在=0
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_IsOnStart" class="vb" id="code8_IsOnStart">
+' 判断自启动项
+Dim 名称, 是否存在
+是否存在 = Plugin.SMWH.IsOnStart(名称)
+TracePrint 是否存在
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='CreateLink'></a>CreateLink 创建快捷方式
+</td></tr><tr><th>命令功能：</th><td>
+创建快捷方式
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，保存路径
+参数2【必选】：字符型，关联程序
+参数3【可选】：字符型，参数
+参数4【可选】：字符型，提示描述
+参数5【可选】：字符型，快捷图标
+参数6【可选】：字符型，快捷键
+参数7【可选】：长整型，运行方式，默认 1
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_CreateLink" class="vb" id="code8_CreateLink">
+' 创建快捷方式
+Dim 保存路径, 关联程序, 参数, 提示描述, 快捷图标, 快捷键, 是否成功
+是否成功 = Plugin.SMWH.CreateLink(保存路径, 关联程序, 参数, 提示描述, 快捷图标, 快捷键, 1)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='CreateMkLink'></a>CreateMkLink 创建映射链接
+</td></tr><tr><th>命令功能：</th><td>
+创建映射链接
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，保存路径
+参数2【必选】：字符型，关联目标路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_CreateMkLink" class="vb" id="code8_CreateMkLink">
+' 创建映射链接
+Dim 保存路径, 关联目标路径, 是否成功
+是否成功 = Plugin.SMWH.CreateMkLink(保存路径, 关联目标路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='MeRestart'></a>MeRestart 小精灵自我重启
+</td></tr><tr><th>命令功能：</th><td>
+小精灵自我重启
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_MeRestart" class="vb" id="code8_MeRestart">
+' 小精灵自我重启
+Dim 是否成功
+是否成功 = Plugin.SMWH.MeRestart()
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='MeExit'></a>MeExit 小精灵自我退出
+</td></tr><tr><th>命令功能：</th><td>
+小精灵自我退出
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_MeExit" class="vb" id="code8_MeExit">
+' 小精灵自我退出
+Dim 是否成功
+是否成功 = Plugin.SMWH.MeExit()
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='MeDelete'></a>MeDelete 小精灵自我删除
+</td></tr><tr><th>命令功能：</th><td>
+小精灵自我删除
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_MeDelete" class="vb" id="code8_MeDelete">
+' 小精灵自我删除
+Dim 是否成功
+是否成功 = Plugin.SMWH.MeDelete()
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_360Login'></a>SMS_360Login 360接码登录
+</td></tr><tr><th>命令功能：</th><td>
+360接码登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，用户名
+参数2【必选】：字符型，密码
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.360yzm.com/reg.html?uid=17070" target="_blank">http://www.360yzm.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，登录结果：成功=1|令牌|余额；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_360Login" class="vb" id="code8_SMS_360Login">
+' 360接码登录
+Dim 用户名, 密码, 登录结果
+登录结果 = Plugin.SMWH.SMS_360Login(用户名, 密码)
+TracePrint 登录结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_360GetTEL'></a>SMS_360GetTEL 360接码取手机号
+</td></tr><tr><th>命令功能：</th><td>
+360接码取手机号
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，数量，默认 1
+参数5【可选】：字符型，地区
+参数6【可选】：长整型，运营商，默认 0=不限， 1=移动、2=联通、3=电信
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.360yzm.com/reg.html?uid=17070" target="_blank">http://www.360yzm.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|号码1|号码2|号码3...；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_360GetTEL" class="vb" id="code8_SMS_360GetTEL">
+' 360接码取手机号
+Dim 项目ID, 手机号, 令牌, 地区, 获取结果
+获取结果 = Plugin.SMWH.SMS_360GetTEL(项目ID, 手机号, 令牌, 1, 地区, 0)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_360Send'></a>SMS_360Send 360接码发短信
+</td></tr><tr><th>命令功能：</th><td>
+360接码发短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【必选】：字符型，短信内容
+参数4【可选】：字符型，令牌
+参数5【可选】：长整型，超时秒，默认 80
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.360yzm.com/reg.html?uid=17070" target="_blank">http://www.360yzm.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，发送结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_360Send" class="vb" id="code8_SMS_360Send">
+' 360接码发短信
+Dim 项目ID, 手机号, 短信内容, 令牌, 发送结果
+发送结果 = Plugin.SMWH.SMS_360Send(项目ID, 手机号, 短信内容, 令牌, 80)
+TracePrint 发送结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_360GetMS'></a>SMS_360GetMS 360接码获取短信
+</td></tr><tr><th>命令功能：</th><td>
+360接码获取短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，超时秒，默认 80
+参数5【可选】：逻辑型，是否保留，默认 False
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.360yzm.com/reg.html?uid=17070" target="_blank">http://www.360yzm.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|短信内容|验证码；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_360GetMS" class="vb" id="code8_SMS_360GetMS">
+' 360接码获取短信
+Dim 项目ID, 手机号, 令牌, 获取结果
+获取结果 = Plugin.SMWH.SMS_360GetMS(项目ID, 手机号, 令牌, 80, False)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_360AddBlack'></a>SMS_360AddBlack 360接码加黑名单
+</td></tr><tr><th>命令功能：</th><td>
+360接码加黑名单
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.360yzm.com/reg.html?uid=17070" target="_blank">http://www.360yzm.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_360AddBlack" class="vb" id="code8_SMS_360AddBlack">
+' 360接码加黑名单
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_360AddBlack(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_360ReTEL'></a>SMS_360ReTEL 360接码释放号码
+</td></tr><tr><th>命令功能：</th><td>
+360接码释放号码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.360yzm.com/reg.html?uid=17070" target="_blank">http://www.360yzm.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_360ReTEL" class="vb" id="code8_SMS_360ReTEL">
+' 360接码释放号码
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_360ReTEL(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_360Exit'></a>SMS_360Exit 360接码退出
+</td></tr><tr><th>命令功能：</th><td>
+360接码退出
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.360yzm.com/reg.html?uid=17070" target="_blank">http://www.360yzm.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_360Exit" class="vb" id="code8_SMS_360Exit">
+' 360接码退出
+Dim 令牌
+Call Plugin.SMWH.SMS_360Exit(令牌)
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SumaLogin'></a>SMS_SumaLogin 速码接码登录
+</td></tr><tr><th>命令功能：</th><td>
+速码接码登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，用户名
+参数2【必选】：字符型，密码
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.eobzz.com/index.html?makeUserID=SMWHff#registered" target="_blank">http://www.eobzz.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，登录结果：成功=1|令牌|余额；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SumaLogin" class="vb" id="code8_SMS_SumaLogin">
+' 速码接码登录
+Dim 用户名, 密码, 登录结果
+登录结果 = Plugin.SMWH.SMS_SumaLogin(用户名, 密码)
+TracePrint 登录结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SumaGetTEL'></a>SMS_SumaGetTEL 速码接码取手机号
+</td></tr><tr><th>命令功能：</th><td>
+速码接码取手机号
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，数量，默认 1
+参数5【可选】：字符型，地区
+参数6【可选】：长整型，运营商，默认 0=不限， 1=移动、2=联通、3=电信
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.eobzz.com/index.html?makeUserID=SMWHff#registered" target="_blank">http://www.eobzz.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|号码1|号码2|号码3...；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SumaGetTEL" class="vb" id="code8_SMS_SumaGetTEL">
+' 速码接码取手机号
+Dim 项目ID, 手机号, 令牌, 地区, 获取结果
+获取结果 = Plugin.SMWH.SMS_SumaGetTEL(项目ID, 手机号, 令牌, 1, 地区, 0)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SumaSend'></a>SMS_SumaSend 速码接码发短信
+</td></tr><tr><th>命令功能：</th><td>
+速码接码发短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【必选】：字符型，短信内容
+参数4【可选】：字符型，令牌
+参数5【可选】：长整型，超时秒，默认 80
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.eobzz.com/index.html?makeUserID=SMWHff#registered" target="_blank">http://www.eobzz.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，发送结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SumaSend" class="vb" id="code8_SMS_SumaSend">
+' 速码接码发短信
+Dim 项目ID, 手机号, 短信内容, 令牌, 发送结果
+发送结果 = Plugin.SMWH.SMS_SumaSend(项目ID, 手机号, 短信内容, 令牌, 80)
+TracePrint 发送结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SumaGetMS'></a>SMS_SumaGetMS 速码接码获取短信
+</td></tr><tr><th>命令功能：</th><td>
+速码接码获取短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，超时秒，默认 80
+参数5【可选】：逻辑型，是否保留，默认 False
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.eobzz.com/index.html?makeUserID=SMWHff#registered" target="_blank">http://www.eobzz.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|短信内容|验证码；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SumaGetMS" class="vb" id="code8_SMS_SumaGetMS">
+' 速码接码获取短信
+Dim 项目ID, 手机号, 令牌, 获取结果
+获取结果 = Plugin.SMWH.SMS_SumaGetMS(项目ID, 手机号, 令牌, 80, False)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SumaAddBlack'></a>SMS_SumaAddBlack 速码接码加黑名单
+</td></tr><tr><th>命令功能：</th><td>
+速码接码加黑名单
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.eobzz.com/index.html?makeUserID=SMWHff#registered" target="_blank">http://www.eobzz.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SumaAddBlack" class="vb" id="code8_SMS_SumaAddBlack">
+' 速码接码加黑名单
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_SumaAddBlack(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SumaReTEL'></a>SMS_SumaReTEL 速码接码释放号码
+</td></tr><tr><th>命令功能：</th><td>
+速码接码释放号码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.eobzz.com/index.html?makeUserID=SMWHff#registered" target="_blank">http://www.eobzz.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SumaReTEL" class="vb" id="code8_SMS_SumaReTEL">
+' 速码接码释放号码
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_SumaReTEL(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_EmaLogin'></a>SMS_EmaLogin E码接码登录
+</td></tr><tr><th>命令功能：</th><td>
+E码接码登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，用户名
+参数2【必选】：字符型，密码
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.ema666.com/register.html?refer_id=212339" target="_blank">http://www.ema666.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，登录结果：成功=1|令牌|余额；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_EmaLogin" class="vb" id="code8_SMS_EmaLogin">
+' E码接码登录
+Dim 用户名, 密码, 登录结果
+登录结果 = Plugin.SMWH.SMS_EmaLogin(用户名, 密码)
+TracePrint 登录结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_EmaGetTEL'></a>SMS_EmaGetTEL E码接码取手机号
+</td></tr><tr><th>命令功能：</th><td>
+E码接码取手机号
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，数量，默认 1
+参数5【可选】：字符型，地区
+参数6【可选】：长整型，运营商，默认 0=不限， 1=移动、2=联通、3=电信
+参数7【可选】：字符型，排除号段
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.ema666.com/register.html?refer_id=212339" target="_blank">http://www.ema666.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_EmaGetTEL" class="vb" id="code8_SMS_EmaGetTEL">
+' E码接码取手机号
+Dim 项目ID, 手机号, 令牌, 地区, 排除号段, 获取结果
+获取结果 = Plugin.SMWH.SMS_EmaGetTEL(项目ID, 手机号, 令牌, 1, 地区, 0, 排除号段)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_EmaSend'></a>SMS_EmaSend E码接码发短信
+</td></tr><tr><th>命令功能：</th><td>
+E码接码发短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【必选】：字符型，短信内容
+参数4【可选】：字符型，令牌
+参数5【可选】：长整型，超时秒，默认 80
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.ema666.com/register.html?refer_id=212339" target="_blank">http://www.ema666.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，发送结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_EmaSend" class="vb" id="code8_SMS_EmaSend">
+' E码接码发短信
+Dim 项目ID, 手机号, 短信内容, 令牌, 发送结果
+发送结果 = Plugin.SMWH.SMS_EmaSend(项目ID, 手机号, 短信内容, 令牌, 80)
+TracePrint 发送结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_EmaGetMS'></a>SMS_EmaGetMS E码接码获取短信
+</td></tr><tr><th>命令功能：</th><td>
+E码接码获取短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，超时秒，默认 80
+参数5【可选】：逻辑型，是否保留，默认 False
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.ema666.com/register.html?refer_id=212339" target="_blank">http://www.ema666.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|短信内容|验证码；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_EmaGetMS" class="vb" id="code8_SMS_EmaGetMS">
+' E码接码获取短信
+Dim 项目ID, 手机号, 令牌, 获取结果
+获取结果 = Plugin.SMWH.SMS_EmaGetMS(项目ID, 手机号, 令牌, 80, False)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_EmaAddBlack'></a>SMS_EmaAddBlack E码接码加黑名单
+</td></tr><tr><th>命令功能：</th><td>
+E码接码加黑名单
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.ema666.com/register.html?refer_id=212339" target="_blank">http://www.ema666.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_EmaAddBlack" class="vb" id="code8_SMS_EmaAddBlack">
+' E码接码加黑名单
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_EmaAddBlack(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_EmaReTEL'></a>SMS_EmaReTEL E码接码释放号码
+</td></tr><tr><th>命令功能：</th><td>
+E码接码释放号码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.ema666.com/register.html?refer_id=212339" target="_blank">http://www.ema666.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_EmaReTEL" class="vb" id="code8_SMS_EmaReTEL">
+' E码接码释放号码
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_EmaReTEL(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_EmaExit'></a>SMS_EmaExit E码接码退出
+</td></tr><tr><th>命令功能：</th><td>
+E码接码退出
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.ema666.com/register.html?refer_id=212339" target="_blank">http://www.ema666.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_EmaExit" class="vb" id="code8_SMS_EmaExit">
+' E码接码退出
+Dim 令牌
+Call Plugin.SMWH.SMS_EmaExit(令牌)
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_KJCLogin'></a>SMS_KJCLogin 科技虫接码登录
+</td></tr><tr><th>命令功能：</th><td>
+科技虫接码登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，用户名
+参数2【必选】：字符型，密码
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://abc.aiputime.com/" target="_blank">http://abc.aiputime.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，登录结果：成功=1|令牌|余额；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_KJCLogin" class="vb" id="code8_SMS_KJCLogin">
+' 科技虫接码登录
+Dim 用户名, 密码, 登录结果
+登录结果 = Plugin.SMWH.SMS_KJCLogin(用户名, 密码)
+TracePrint 登录结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_KJCGetTEL'></a>SMS_KJCGetTEL 科技虫接码取手机号
+</td></tr><tr><th>命令功能：</th><td>
+科技虫接码取手机号
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，数量，默认 1
+参数5【可选】：字符型，地区
+参数6【可选】：长整型，运营商，默认 0=不限， 1=移动、2=联通、3=电信
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://abc.aiputime.com/" target="_blank">http://abc.aiputime.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|号码1|号码2|号码3...；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_KJCGetTEL" class="vb" id="code8_SMS_KJCGetTEL">
+' 科技虫接码取手机号
+Dim 项目ID, 手机号, 令牌, 地区, 获取结果
+获取结果 = Plugin.SMWH.SMS_KJCGetTEL(项目ID, 手机号, 令牌, 1, 地区, 0)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_KJCSend'></a>SMS_KJCSend 科技虫接码发短信
+</td></tr><tr><th>命令功能：</th><td>
+科技虫接码发短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号，格式：手机号码->发送短信接收号码
+参数3【必选】：字符型，短信内容
+参数4【可选】：字符型，令牌
+参数5【可选】：长整型，超时秒，默认 80
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://abc.aiputime.com/" target="_blank">http://abc.aiputime.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，发送结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_KJCSend" class="vb" id="code8_SMS_KJCSend">
+' 科技虫接码发短信
+Dim 项目ID, 短信内容, 令牌, 发送结果
+发送结果 = Plugin.SMWH.SMS_KJCSend(项目ID, 手机号, 短信内容, 令牌, 80)
+TracePrint 发送结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_KJCGetMS'></a>SMS_KJCGetMS 科技虫接码获取短信
+</td></tr><tr><th>命令功能：</th><td>
+科技虫接码获取短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，超时秒，默认 80
+参数5【可选】：逻辑型，是否保留，默认 False
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://abc.aiputime.com/" target="_blank">http://abc.aiputime.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|短信内容|验证码；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_KJCGetMS" class="vb" id="code8_SMS_KJCGetMS">
+' 科技虫接码获取短信
+Dim 项目ID, 手机号, 令牌, 获取结果
+获取结果 = Plugin.SMWH.SMS_KJCGetMS(项目ID, 手机号, 令牌, 80, False)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_KJCAddBlack'></a>SMS_KJCAddBlack 科技虫接码加黑名单
+</td></tr><tr><th>命令功能：</th><td>
+科技虫接码加黑名单
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://abc.aiputime.com/" target="_blank">http://abc.aiputime.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_KJCAddBlack" class="vb" id="code8_SMS_KJCAddBlack">
+' 科技虫接码加黑名单
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_KJCAddBlack(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_KJCReTEL'></a>SMS_KJCReTEL 科技虫接码释放号码
+</td></tr><tr><th>命令功能：</th><td>
+科技虫接码释放号码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://abc.aiputime.com/" target="_blank">http://abc.aiputime.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_KJCReTEL" class="vb" id="code8_SMS_KJCReTEL">
+' 科技虫接码释放号码
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_KJCReTEL(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SHLogin'></a>SMS_SHLogin 神话接码登录
+</td></tr><tr><th>命令功能：</th><td>
+神话接码登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，用户名
+参数2【必选】：字符型，密码
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.shjmpt.com:8000/register.html?refer_id=1659997" target="_blank">http://www.shjmpt.com:8000/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，登录结果：成功=1|令牌|余额；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SHLogin" class="vb" id="code8_SMS_SHLogin">
+' 神话接码登录
+Dim 用户名, 密码, 登录结果
+登录结果 = Plugin.SMWH.SMS_SHLogin(用户名, 密码)
+TracePrint 登录结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SHGetTEL'></a>SMS_SHGetTEL 神话接码取手机号
+</td></tr><tr><th>命令功能：</th><td>
+神话接码取手机号
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，数量，默认 1
+参数5【可选】：字符型，地区
+参数6【可选】：长整型，运营商，默认 0=不限， 1=移动、2=联通、3=电信
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.shjmpt.com:8000/register.html?refer_id=1659997" target="_blank">http://www.shjmpt.com:8000/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|号码1|号码2|号码3...；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SHGetTEL" class="vb" id="code8_SMS_SHGetTEL">
+' 神话接码取手机号
+Dim 项目ID, 手机号, 令牌, 地区, 获取结果
+获取结果 = Plugin.SMWH.SMS_SHGetTEL(项目ID, 手机号, 令牌, 1, 地区, 0)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SHSend'></a>SMS_SHSend 神话接码发短信
+</td></tr><tr><th>命令功能：</th><td>
+神话接码发短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【必选】：字符型，短信内容
+参数4【可选】：字符型，令牌
+参数5【可选】：长整型，超时秒，默认 80
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.shjmpt.com:8000/register.html?refer_id=1659997" target="_blank">http://www.shjmpt.com:8000/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，发送结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SHSend" class="vb" id="code8_SMS_SHSend">
+' 神话接码发短信
+Dim 项目ID, 手机号, 短信内容, 令牌, 发送结果
+发送结果 = Plugin.SMWH.SMS_SHSend(项目ID, 手机号, 短信内容, 令牌, 80)
+TracePrint 发送结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SHGetMS'></a>SMS_SHGetMS 神话接码获取短信
+</td></tr><tr><th>命令功能：</th><td>
+神话接码获取短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，超时秒，默认 80
+参数5【可选】：逻辑型，是否保留，默认 False
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.shjmpt.com:8000/register.html?refer_id=1659997" target="_blank">http://www.shjmpt.com:8000/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|短信内容|验证码；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SHGetMS" class="vb" id="code8_SMS_SHGetMS">
+' 神话接码获取短信
+Dim 项目ID, 手机号, 令牌, 获取结果
+获取结果 = Plugin.SMWH.SMS_SHGetMS(项目ID, 手机号, 令牌, 80, False)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SHAddBlack'></a>SMS_SHAddBlack 神话接码加黑名单
+</td></tr><tr><th>命令功能：</th><td>
+神话接码加黑名单
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.shjmpt.com:8000/register.html?refer_id=1659997" target="_blank">http://www.shjmpt.com:8000/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SHAddBlack" class="vb" id="code8_SMS_SHAddBlack">
+' 神话接码加黑名单
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_SHAddBlack(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SHReTEL'></a>SMS_SHReTEL 神话接码释放号码
+</td></tr><tr><th>命令功能：</th><td>
+神话接码释放号码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.shjmpt.com:8000/register.html?refer_id=1659997" target="_blank">http://www.shjmpt.com:8000/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SHReTEL" class="vb" id="code8_SMS_SHReTEL">
+' 神话接码释放号码
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_SHReTEL(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_SHExit'></a>SMS_SHExit 神话接码退出
+</td></tr><tr><th>命令功能：</th><td>
+神话接码退出
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://www.shjmpt.com:8000/register.html?refer_id=1659997" target="_blank">http://www.shjmpt.com:8000/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_SHExit" class="vb" id="code8_SMS_SHExit">
+' 神话接码退出
+Dim 令牌
+Call Plugin.SMWH.SMS_SHExit(令牌)
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_YiKaLogin'></a>SMS_YiKaLogin 千万卡接码登录
+</td></tr><tr><th>命令功能：</th><td>
+千万卡接码登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，用户名
+参数2【必选】：字符型，密码
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://t.cn/ROLVqwd" target="_blank">http://www.yika66.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，登录结果：成功=1|令牌|余额；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_YiKaLogin" class="vb" id="code8_SMS_YiKaLogin">
+' 千万卡接码登录
+Dim 用户名, 密码, 登录结果
+登录结果 = Plugin.SMWH.SMS_YiKaLogin(用户名, 密码)
+TracePrint 登录结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_YiKaGetTEL'></a>SMS_YiKaGetTEL 千万卡接码取手机号
+</td></tr><tr><th>命令功能：</th><td>
+千万卡接码取手机号
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，数量，默认 1
+参数5【可选】：字符型，地区
+参数6【可选】：长整型，运营商，默认 0=不限， 1=移动、2=联通、3=电信
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://t.cn/ROLVqwd" target="_blank">http://www.yika66.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|号码1|号码2|号码3...；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_YiKaGetTEL" class="vb" id="code8_SMS_YiKaGetTEL">
+' 千万卡接码取手机号
+Dim 项目ID, 手机号, 令牌, 地区, 获取结果
+获取结果 = Plugin.SMWH.SMS_YiKaGetTEL(项目ID, 手机号, 令牌, 1, 地区, 0)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_YiKaSend'></a>SMS_YiKaSend 千万卡接码发短信
+</td></tr><tr><th>命令功能：</th><td>
+千万卡接码发短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【必选】：字符型，短信内容
+参数4【可选】：字符型，令牌
+参数5【可选】：长整型，超时秒，默认 80
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://t.cn/ROLVqwd" target="_blank">http://www.yika66.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，发送结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_YiKaSend" class="vb" id="code8_SMS_YiKaSend">
+' 千万卡接码发短信
+Dim 项目ID, 手机号, 短信内容, 令牌, 发送结果
+发送结果 = Plugin.SMWH.SMS_YiKaSend(项目ID, 手机号, 短信内容, 令牌, 80)
+TracePrint 发送结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_YiKaGetMS'></a>SMS_YiKaGetMS 千万卡接码获取短信
+</td></tr><tr><th>命令功能：</th><td>
+千万卡接码获取短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，超时秒，默认 80
+参数5【可选】：逻辑型，是否保留，默认 False
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://t.cn/ROLVqwd" target="_blank">http://www.yika66.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|短信内容|验证码；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_YiKaGetMS" class="vb" id="code8_SMS_YiKaGetMS">
+' 千万卡接码获取短信
+Dim 项目ID, 手机号, 令牌, 获取结果
+获取结果 = Plugin.SMWH.SMS_YiKaGetMS(项目ID, 手机号, 令牌, 80, False)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_YiKaAddBlack'></a>SMS_YiKaAddBlack 千万卡接码加黑名单
+</td></tr><tr><th>命令功能：</th><td>
+千万卡接码加黑名单
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://t.cn/ROLVqwd" target="_blank">http://www.yika66.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_YiKaAddBlack" class="vb" id="code8_SMS_YiKaAddBlack">
+' 千万卡接码加黑名单
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_YiKaAddBlack(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_YiKaReTEL'></a>SMS_YiKaReTEL 千万卡接码释放号码
+</td></tr><tr><th>命令功能：</th><td>
+千万卡接码释放号码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://t.cn/ROLVqwd" target="_blank">http://www.yika66.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_YiKaReTEL" class="vb" id="code8_SMS_YiKaReTEL">
+' 千万卡接码释放号码
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_YiKaReTEL(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_YiKaExit'></a>SMS_YiKaExit 千万卡接码退出
+</td></tr><tr><th>命令功能：</th><td>
+千万卡接码退出
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，令牌
+
+<span style="color:#FF00FF;font-weight:bold">点击注册：</span><a href="http://t.cn/ROLVqwd" target="_blank">http://www.yika66.com/</a>
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+无
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_YiKaExit" class="vb" id="code8_SMS_YiKaExit">
+' 千万卡接码退出
+Dim 令牌
+Call Plugin.SMWH.SMS_YiKaExit(令牌)
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_ALZLogin'></a>SMS_ALZLogin 爱乐赞接码登录
+</td></tr><tr><th>命令功能：</th><td>
+爱乐赞接码登录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，用户名
+参数2【必选】：字符型，密码
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，登录结果：成功=1|令牌|余额；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_ALZLogin" class="vb" id="code8_SMS_ALZLogin">
+' 爱乐赞接码登录
+Dim 用户名, 密码, 登录结果
+登录结果 = Plugin.SMWH.SMS_ALZLogin(用户名, 密码)
+TracePrint 登录结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_ALZGetTEL'></a>SMS_ALZGetTEL 爱乐赞接码取手机号
+</td></tr><tr><th>命令功能：</th><td>
+爱乐赞接码取手机号
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，数量，默认 1
+参数5【可选】：字符型，地区
+参数6【可选】：长整型，运营商，默认 0=不限， 1=移动、2=联通、3=电信
+参数7【可选】：变体型，虚拟运营商，默认 0=排除虚拟运营商， 1=只取虚拟运营商
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|号码1|号码2|号码3...；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_ALZGetTEL" class="vb" id="code8_SMS_ALZGetTEL">
+' 爱乐赞接码取手机号
+Dim 项目ID, 手机号, 令牌, 地区, 获取结果
+获取结果 = Plugin.SMWH.SMS_ALZGetTEL(项目ID, 手机号, 令牌, 1, 地区, 0, 0)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_ALZSend'></a>SMS_ALZSend 爱乐赞接码发短信
+</td></tr><tr><th>命令功能：</th><td>
+爱乐赞接码发短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号，格式：手机号码->发送短信接收号码
+参数3【必选】：字符型，短信内容
+参数4【可选】：字符型，令牌
+参数5【可选】：长整型，超时秒，默认 80
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，发送结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_ALZSend" class="vb" id="code8_SMS_ALZSend">
+' 爱乐赞接码发短信
+Dim 项目ID, 短信内容, 令牌, 发送结果
+发送结果 = Plugin.SMWH.SMS_ALZSend(项目ID, 手机号, 短信内容, 令牌, 80)
+TracePrint 发送结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_ALZGetMS'></a>SMS_ALZGetMS 爱乐赞接码获取短信
+</td></tr><tr><th>命令功能：</th><td>
+爱乐赞接码获取短信
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+参数4【可选】：长整型，超时秒，默认 80
+参数5【可选】：逻辑型，是否保留，默认 False
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，获取结果：成功=1|短信内容|验证码；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_ALZGetMS" class="vb" id="code8_SMS_ALZGetMS">
+' 爱乐赞接码获取短信
+Dim 项目ID, 手机号, 令牌, 获取结果
+获取结果 = Plugin.SMWH.SMS_ALZGetMS(项目ID, 手机号, 令牌, 80, False)
+TracePrint 获取结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_ALZAddBlack'></a>SMS_ALZAddBlack 爱乐赞接码加黑名单
+</td></tr><tr><th>命令功能：</th><td>
+爱乐赞接码加黑名单
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，项目ID
+参数2【必选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_ALZAddBlack" class="vb" id="code8_SMS_ALZAddBlack">
+' 爱乐赞接码加黑名单
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_ALZAddBlack(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SMS_ALZReTEL'></a>SMS_ALZReTEL 爱乐赞接码释放号码
+</td></tr><tr><th>命令功能：</th><td>
+爱乐赞接码释放号码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【可选】：字符型，项目ID
+参数2【可选】：字符型，手机号
+参数3【可选】：字符型，令牌
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回结果：成功=1|OK；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SMS_ALZReTEL" class="vb" id="code8_SMS_ALZReTEL">
+' 爱乐赞接码释放号码
+Dim 项目ID, 手机号, 令牌, 返回结果
+返回结果 = Plugin.SMWH.SMS_ALZReTEL(项目ID, 手机号, 令牌)
+TracePrint 返回结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='ZipFile'></a>ZipFile ZIP压缩
+</td></tr><tr><th>命令功能：</th><td>
+ZIP压缩
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，待压缩路径
+参数2【必选】：字符型，压缩文件路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_ZipFile" class="vb" id="code8_ZipFile">
+' ZIP压缩
+Dim 待压缩路径, 压缩文件路径, 是否成功
+是否成功 = Plugin.SMWH.ZipFile(待压缩路径, 压缩文件路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='UnZipFile'></a>UnZipFile ZIP解压
+</td></tr><tr><th>命令功能：</th><td>
+ZIP解压
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，压缩包路径
+参数2【必选】：字符型，解压文件夹
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_UnZipFile" class="vb" id="code8_UnZipFile">
+' ZIP解压
+Dim 压缩包路径, 解压文件夹, 是否成功
+是否成功 = Plugin.SMWH.UnZipFile(压缩包路径, 解压文件夹)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='IsHijack'></a>IsHijack 判断域名是否被劫持
+</td></tr><tr><th>命令功能：</th><td>
+判断域名是否被劫持
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，域名
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+变体型，是否劫持：正常=0；被劫持=1
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_IsHijack" class="vb" id="code8_IsHijack">
+' 判断域名是否被劫持
+Dim 域名, 是否劫持
+是否劫持 = Plugin.SMWH.IsHijack(域名)
+TracePrint 是否劫持
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='NumerToZH'></a>NumerToZH 阿拉伯数字转换中文读法
+</td></tr><tr><th>命令功能：</th><td>
+阿拉伯数字转换中文读法
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：长整型，阿拉伯数字
+参数2【可选】：逻辑型，是否大写
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，中文读法
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_NumerToZH" class="vb" id="code8_NumerToZH">
+' 阿拉伯数字转换中文读法
+Dim 阿拉伯数字, 是否大写, 中文读法
+中文读法 = Plugin.SMWH.NumerToZH(阿拉伯数字, 是否大写)
+TracePrint 中文读法
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Csdyz_LoadCds'></a>Csdyz_LoadCds 次世代载入识别库
+</td></tr><tr><th>命令功能：</th><td>
+次世代载入识别库
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：变体型，识别库
+参数2【必选】：字符型，密码
+参数3【可选】：变体型，次世代DLL
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+长整型，识别库索引
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Csdyz_LoadCds" class="vb" id="code8_Csdyz_LoadCds">
+' 次世代载入识别库
+Dim 识别库, 密码, 次世代DLL, 识别库索引
+识别库索引 = Plugin.SMWH.Csdyz_LoadCds(识别库, 密码, 次世代DLL)
+TracePrint 识别库索引
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='Csdyz_GetVcode'></a>Csdyz_GetVcode 次世代识别验证码
+</td></tr><tr><th>命令功能：</th><td>
+次世代识别验证码
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：长整型，识别库索引
+参数2【必选】：变体型，验证码图片
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，验证码结果
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_Csdyz_GetVcode" class="vb" id="code8_Csdyz_GetVcode">
+' 次世代识别验证码
+Dim 识别库索引, 验证码图片, 验证码结果
+验证码结果 = Plugin.SMWH.Csdyz_GetVcode(识别库索引, 验证码图片)
+TracePrint 验证码结果
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FindUrlPath'></a>FindUrlPath 查找IE缓存资源路径
+</td></tr><tr><th>命令功能：</th><td>
+查找IE缓存资源路径
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，URL
+参数2【可选】：字符型，返回数组
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，资源路径
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FindUrlPath" class="vb" id="code8_FindUrlPath">
+' 查找IE缓存资源路径
+Dim URL, 返回数组, 资源路径
+资源路径 = Plugin.SMWH.FindUrlPath(URL, 返回数组)
+TracePrint 资源路径
+返回数组 = Plugin.SMWH.GetRefVal("FindUrlPath", 2)
+TracePrint 返回数组
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='MidS'></a>MidS 取中间文本
+</td></tr><tr><th>命令功能：</th><td>
+取中间文本
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文本内容
+参数2【必选】：字符型，首字符
+参数3【必选】：字符型，尾字符
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，中间文本
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_MidS" class="vb" id="code8_MidS">
+' 取中间文本
+Dim 文本内容, 首字符, 尾字符, 中间文本
+中间文本 = Plugin.SMWH.MidS(文本内容, 首字符, 尾字符)
+TracePrint 中间文本
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='MidEx'></a>MidEx 取中间文本加强
+</td></tr><tr><th>命令功能：</th><td>
+取中间文本加强
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文本内容
+参数2【必选】：字符型，首字符
+参数3【必选】：字符型，尾字符
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，返回数组
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_MidEx" class="vb" id="code8_MidEx">
+' 取中间文本加强
+Dim 文本内容, 首字符, 尾字符, 返回数组
+返回数组 = Plugin.SMWH.MidEx(文本内容, 首字符, 尾字符)
+TracePrint 返回数组
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='BaiduyunURL'></a>BaiduyunURL 百度云网盘解析
+</td></tr><tr><th>命令功能：</th><td>
+百度云网盘解析
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，URL
+参数2【可选】：字符型，返回数组
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+变体型，返回结果：成功=1|Cookie|首个文件地址|首个文件名；失败=0|错误提示
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_BaiduyunURL" class="vb" id="code8_BaiduyunURL">
+' 百度云网盘解析
+Dim URL, 返回数组, 返回结果
+返回结果 = Plugin.SMWH.BaiduyunURL(URL, 返回数组)
+TracePrint 返回结果
+返回数组 = Plugin.SMWH.GetRefVal("BaiduyunURL", 2)
+TracePrint 返回数组
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SendEmail'></a>SendEmail 发送邮件
+</td></tr><tr><th>命令功能：</th><td>
+发送邮件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，你的邮箱帐号
+参数2【必选】：字符型，你的邮箱密码
+参数3【必选】：字符型，发送邮件地址
+参数4【必选】：字符型，邮件主题
+参数5【必选】：字符型，邮件内容
+参数6【可选】：字符型，邮件附件，多个路径可以用“
+参数7【可选】：长整型，端口，默认 25=不加密， 465=SSL加密、587=TLS加密
+参数8【可选】：字符型，SMTP服务器
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SendEmail" class="vb" id="code8_SendEmail">
+' 发送邮件
+Dim 你的邮箱帐号, 你的邮箱密码, 发送邮件地址, 邮件主题, 邮件内容, SMTP服务器, 是否成功
+是否成功 = Plugin.SMWH.SendEmail(你的邮箱帐号, 你的邮箱密码, 发送邮件地址, 邮件主题, 邮件内容, 邮件附件, 25, SMTP服务器)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='UnlockDel'></a>UnlockDel 强制删除文件
+</td></tr><tr><th>命令功能：</th><td>
+强制删除文件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，文件路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_UnlockDel" class="vb" id="code8_UnlockDel">
+' 强制删除文件
+Dim 文件路径, 是否成功
+是否成功 = Plugin.SMWH.UnlockDel(文件路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='DaemonON'></a>DaemonON 守护进程启动
+</td></tr><tr><th>命令功能：</th><td>
+守护进程启动
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，进程路径
+参数2【必选】：长整型，检测间隔秒
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_DaemonON" class="vb" id="code8_DaemonON">
+' 守护进程启动
+Dim 进程路径, 检测间隔秒, 是否成功
+是否成功 = Plugin.SMWH.DaemonON(进程路径, 检测间隔秒)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='DaemonKeep'></a>DaemonKeep 守护进程心跳
+</td></tr><tr><th>命令功能：</th><td>
+守护进程心跳
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，进程路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_DaemonKeep" class="vb" id="code8_DaemonKeep">
+' 守护进程心跳
+Dim 进程路径, 是否成功
+是否成功 = Plugin.SMWH.DaemonKeep(进程路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='DaemonOFF'></a>DaemonOFF 守护进程关闭
+</td></tr><tr><th>命令功能：</th><td>
+守护进程关闭
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，进程路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_DaemonOFF" class="vb" id="code8_DaemonOFF">
+' 守护进程关闭
+Dim 进程路径, 是否成功
+是否成功 = Plugin.SMWH.DaemonOFF(进程路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='PtrToNum'></a>PtrToNum 指针到数值
+</td></tr><tr><th>命令功能：</th><td>
+指针到数值
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：长整型，指针地址
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+长整型，数值
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_PtrToNum" class="vb" id="code8_PtrToNum">
+' 指针到数值
+Dim 指针地址, 数值
+数值 = Plugin.SMWH.PtrToNum(指针地址)
+TracePrint 数值
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='PtrToStr'></a>PtrToStr 指针到文本
+</td></tr><tr><th>命令功能：</th><td>
+指针到文本
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：长整型，指针地址
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，文本内容
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_PtrToStr" class="vb" id="code8_PtrToStr">
+' 指针到文本
+Dim 指针地址, 文本内容
+文本内容 = Plugin.SMWH.PtrToStr(指针地址)
+TracePrint 文本内容
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='PtrToBin'></a>PtrToBin 指针到字节集
+</td></tr><tr><th>命令功能：</th><td>
+指针到字节集
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：长整型，指针地址
+参数2【必选】：长整型，数据大小
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字节集，字节集数据
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_PtrToBin" class="vb" id="code8_PtrToBin">
+' 指针到字节集
+Dim 指针地址, 数据大小, 字节集数据
+字节集数据 = Plugin.SMWH.PtrToBin(指针地址, 数据大小)
+TracePrint 字节集数据
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='RndIdentify'></a>RndIdentify 身份证生成器
+</td></tr><tr><th>命令功能：</th><td>
+身份证生成器
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，身份证号
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_RndIdentify" class="vb" id="code8_RndIdentify">
+' 身份证生成器
+Dim 身份证号
+身份证号 = Plugin.SMWH.RndIdentify()
+TracePrint 身份证号
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetIPbyName'></a>GetIPbyName 域名转为IP地址
+</td></tr><tr><th>命令功能：</th><td>
+域名转为IP地址
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，域名
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，IP地址
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetIPbyName" class="vb" id="code8_GetIPbyName">
+' 域名转为IP地址
+Dim 域名, IP地址
+IP地址 = Plugin.SMWH.GetIPbyName(域名)
+TracePrint IP地址
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='IsOnline'></a>IsOnline 判断网络是否通断
+</td></tr><tr><th>命令功能：</th><td>
+判断网络是否通断
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+无
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否通断
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_IsOnline" class="vb" id="code8_IsOnline">
+' 判断网络是否通断
+Dim 是否通断
+是否通断 = Plugin.SMWH.IsOnline()
+TracePrint 是否通断
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='ReadSelector'></a>ReadSelector 仿CSS选择器生成窗口句柄路径
+</td></tr><tr><th>命令功能：</th><td>
+仿CSS选择器生成窗口句柄路径
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：长整型，窗口句柄
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，选择器路径
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_ReadSelector" class="vb" id="code8_ReadSelector">
+' 仿CSS选择器生成窗口句柄路径
+Dim 窗口句柄, 选择器路径
+选择器路径 = Plugin.SMWH.ReadSelector(窗口句柄)
+TracePrint 选择器路径
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FindSelector'></a>FindSelector 通过CSS选择器查找窗口句柄
+</td></tr><tr><th>命令功能：</th><td>
+通过CSS选择器查找窗口句柄
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，选择器路径
+参数2【可选】：变体型，顶层句柄
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+长整型，窗口句柄
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FindSelector" class="vb" id="code8_FindSelector">
+' 通过CSS选择器查找窗口句柄
+Dim 选择器路径, 顶层句柄, 窗口句柄
+窗口句柄 = Plugin.SMWH.FindSelector(选择器路径, 顶层句柄)
+TracePrint 窗口句柄
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='SoftwTally'></a>SoftwTally 统计脚本使用人数
+</td></tr><tr><th>命令功能：</th><td>
+统计脚本使用人数
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，软件名称
+参数2【可选】：字符型，用户名
+参数3【可选】：字符型，备注
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+长整型，统计人数
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_SoftwTally" class="vb" id="code8_SoftwTally">
+' 统计脚本使用人数
+Dim 软件名称, 用户名, 备注, 统计人数
+统计人数 = Plugin.SMWH.SoftwTally(软件名称, 用户名, 备注)
+TracePrint 统计人数
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FTP_Conn'></a>FTP_Conn 连接FTP服务器
+</td></tr><tr><th>命令功能：</th><td>
+连接FTP服务器
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，FTP地址
+参数2【必选】：字符型，用户名
+参数3【必选】：字符型，密码
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FTP_Conn" class="vb" id="code8_FTP_Conn">
+' 连接FTP服务器
+Dim FTP地址, 用户名, 密码, 是否成功
+是否成功 = Plugin.SMWH.FTP_Conn(FTP地址, 用户名, 密码)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FTP_PutFile'></a>FTP_PutFile 上传FTP文件
+</td></tr><tr><th>命令功能：</th><td>
+上传FTP文件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，本地路径
+参数2【必选】：字符型，远程路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FTP_PutFile" class="vb" id="code8_FTP_PutFile">
+' 上传FTP文件
+Dim 本地路径, 远程路径, 是否成功
+是否成功 = Plugin.SMWH.FTP_PutFile(本地路径, 远程路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FTP_GetFile'></a>FTP_GetFile 下载FTP文件
+</td></tr><tr><th>命令功能：</th><td>
+下载FTP文件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，远程路径
+参数2【必选】：字符型，本地路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FTP_GetFile" class="vb" id="code8_FTP_GetFile">
+' 下载FTP文件
+Dim 远程路径, 本地路径, 是否成功
+是否成功 = Plugin.SMWH.FTP_GetFile(远程路径, 本地路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FTP_DelFile'></a>FTP_DelFile 删除FTP文件
+</td></tr><tr><th>命令功能：</th><td>
+删除FTP文件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，远程路径
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FTP_DelFile" class="vb" id="code8_FTP_DelFile">
+' 删除FTP文件
+Dim 远程路径, 是否成功
+是否成功 = Plugin.SMWH.FTP_DelFile(远程路径)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FTP_NewDir'></a>FTP_NewDir 创建FTP目录
+</td></tr><tr><th>命令功能：</th><td>
+创建FTP目录
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，远程目录
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FTP_NewDir" class="vb" id="code8_FTP_NewDir">
+' 创建FTP目录
+Dim 远程目录, 是否成功
+是否成功 = Plugin.SMWH.FTP_NewDir(远程目录)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='FTP_RenFile'></a>FTP_RenFile 重命名FTP文件
+</td></tr><tr><th>命令功能：</th><td>
+重命名FTP文件
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，原文件名
+参数2【必选】：字符型，新文件名
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+逻辑型，是否成功
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_FTP_RenFile" class="vb" id="code8_FTP_RenFile">
+' 重命名FTP文件
+Dim 原文件名, 新文件名, 是否成功
+是否成功 = Plugin.SMWH.FTP_RenFile(原文件名, 新文件名)
+TracePrint 是否成功
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetDllObject'></a>GetDllObject 免注册调用COM对象
+</td></tr><tr><th>命令功能：</th><td>
+免注册调用COM对象
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，DLL路径
+参数2【必选】：字符型，类名
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+对象，COM对象
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetDllObject" class="vb" id="code8_GetDllObject">
+' 免注册调用COM对象
+Dim DLL路径, 类名, COM对象
+COM对象 = Plugin.SMWH.GetDllObject(DLL路径, 类名)
+TracePrint COM对象
+
+</td></tr></table>	
+	
+
+
+
+<table width='100%' border='0' cellpadding='0' cellspacing='1' class='ts'>
+<tr><th width='100px'>命令名称：</th><td class='name'>
+<a name='GetRefVal'></a>GetRefVal 取变参指针数据
+</td></tr><tr><th>命令功能：</th><td>
+取变参指针数据
+</td></tr><tr><th>命令参数：</th><td class='canshu'><pre>
+参数1【必选】：字符型，函数名称
+参数2【必选】：长整型，参数索引，默认 0=取函数返回， >0=取参数返回
+参数3【可选】：逻辑型，是否清空，默认 False
+
+</td></tr><tr><th>返回值：</th><td class='fanhui'>
+字符型，参数数据
+</td></tr><tr><th>脚本例子：<br /><span class='red'>(8.x语法)</span>
+</th><td class='lizi'><pre name="code8_GetRefVal" class="vb" id="code8_GetRefVal">
+' 取变参指针数据
+Dim 函数名称, 参数数据
+参数数据 = Plugin.SMWH.GetRefVal(函数名称, 0, False)
+TracePrint 参数数据
+
+</td></tr></table>	
+	
+
+
+
+
+<script type="text/javascript">
+    dp.sh.Brushes.Vb = function()
+    { 
+        var keywords = 'vbBlack vbRed vbGreen vbYellow vbBlue vbMagenta vbCyan vbWhite vbBinaryCompare vbTextCompare vbSunday vbMonday vbTuesday vbWednesday ' + 
+        'vbThursday vbFriday vbSaturday vbUseSystemDayOfWeek vbFirstJan1 vbFirstFourDays vbFirstFullWeek vbGeneralDate vbLongDate vbShortDate vbLongTime ' + 
+        'vbShortTime vbObjectError vbOKOnly vbOKCancel vbAbortRetryIgnore vbYesNoCancel vbYesNo vbRetryCancel vbCritical vbQuestion vbExclamation vbInformation ' + 
+        'vbDefaultButton1 vbDefaultButton2 vbDefaultButton3 vbDefaultButton4 vbApplicationModal vbSystemModal vbOK vbCancel vbAbort vbRetry vbIgnore vbYes vbNo '+
+        'vbCr vbCrLf vbFormFeed vbLf vbNewLine vbNullChar vbNullString vbTab vbVerticalTab vbUseDefault vbTrue vbFalse vbEmpty vbNull vbInteger vbLong vbSingle '+
+        'vbDouble vbCurrency vbDate vbString vbObject vbError vbBoolean vbVariant vbDataObject vbDecimal vbByte vbArray WScript '+
+        'And As Boolean ByRef Byte ByVal Call Case Const Currency Debug Dim Do Double Each Else ElseIf Empty End EndIf Enum Eqv Event Exit Explicit False For '+ 
+        'Function Get Goto If Imp Implements In Integer Is Let Like Long Loop LSet Me Mod New Next Not Nothing Null On Option Optional Or ParamArray Preserve '+
+        'Private Property Public RaiseEvent ReDim Rem Resume RSet Select Set Shared Single Static Stop Sub Then To True Type TypeOf Until Variant WEnd While With '+
+        'Xor IfColor Import UserVar SetSimMode Global EndScript ExitScript RestartScript Delay VBSBegin VBSEnd Lib Alias Declare Plugin ' +
+        'Abs Array Asc Atn CBool CByte CCur CDate CDbl CInt CLng CSng CStr Chr Cos CreateObject Date DateAdd DateDiff DatePart DateSerial DateValue Day Escape '+
+        'Eval Exp Filter Fix FormatCurrency FormatDateTime FormatNumber FormatPercent GetLocale GetObject GetRef Hex Hour InStr InStrRev InputBox Int IsArray '+
+        'IsDate IsEmpty IsNull IsNumeric IsObject Join LBound LCase LTrim Left Len LoadPicture Log Mid Minute Month MonthName MsgBox Now Oct Randomize RGB RTrim '+
+        'Replace Right Rnd Round ScriptEngine ScriptEngineBuildVersion ScriptEngineMajorVersion ScriptEngineMinorVersion Second SetLocale Sgn Sin Space Split Sqr '+
+        'StrComp StrReverse String Tan Time TimeSerial TimeValue Timer Trim TypeName UBound UCase Unescape VarType Weekday WeekdayName Year KeyGroup KeyPress '+
+        'KeyPressH KeyPressS KeyDown KeyDownH KeyDownS KeyUp KeyUpH KeyUpS WaitKey GetLastKey LeftClick LeftClickH LeftClickS LeftDoubleClick LeftDoubleClickH '+
+        'LeftDoubleClickS LeftDown LeftDownH LeftDownS LeftUp LeftUpH LeftUpS RightClick RightClickH RightClickS RightDown RightDownH RightDownS RightUp '+
+        'RightUpH RightUpS MiddleClick MiddleClickH MiddleClickS MoveTo MoveToH MoveToS MoveR MoveRH MoveRS MouseWheel SaveMousePos RestoreMousePos LockMouse '+
+        'UnlockMouse WaitClick GetLastClick GetCursorPos GetCursorShape GetPixelColor FindColor FindColorEx FindCenterColor FindPic GetmacroID SayString '+
+        'MessageBox RunApp PutAttachment TracePrint LogStart LogStop BeginThread StopThread PauseThread ContinueThread GetThreadID SetEnv GetEnv Beep Execute '+
+        'GetExeDir GetScreenResolution ExecuteGlobal '+
+        'Bkgnd BkgndColor Color Console Encrypt File GetSysInfo Media Memory Msg Net Office Pic Sys Web Window';
+        this.regexList = [
+            { regex: new RegExp('(//|\').*$', 'gm'), css: 'comment' }, 
+            { regex: dp.sh.RegexLib.DoubleQuotedString, css: 'string' }, 
+            { regex: new RegExp(this.GetKeywords('dm'), 'gm'), css: 'preprocessor' }, 
+            { regex: new RegExp(this.GetKeywords(keywords), 'gm'), css: 'keyword'}
+        ]; 
+        this.CssClass = 'dp-vb'; 
+    }
+    dp.sh.Brushes.Vb.prototype = new dp.sh.Highlighter(); dp.sh.Brushes.Vb.Aliases = ['vb', 'vb.net'];
+    dp.SyntaxHighlighter.ClipboardSwf = "http://www.vrbrothers.com/cn/qmacro/qmdn/htmls/zh_chs/qm/scripts/clipboard.swf";
+    dp.SyntaxHighlighter.HighlightAll('code8_A_Fee',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Ver',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetBasePath',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetDOS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SetData',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetData',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Md5',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Md5_File',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetJSON',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SetJSON',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_StrToBin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_BinToStr',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_ByteAdd',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_ReadByte',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SaveFile',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_ReadHex',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_BinToHex',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_HexToBin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Base64',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_UnBase64',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Base64_File',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_UnBase64_File',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_RegExp',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_WinHttp',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetIPOS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Execute',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Eval',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Escape',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_UnEscape',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_EscapeURL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_UnEscapeURL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetRange',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_TakeQQ',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Encrypt',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_AES',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_AES_File',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_IMG_Conve',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_IMG_Scale',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetCommLine',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetMeHwnd',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetHwndByPID',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_IsDebug',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Update',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_RegRead',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_RegWrite',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_RegDelete',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_OnStartAdd',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_OnStartDel',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_IsOnStart',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_CreateLink',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_CreateMkLink',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_MeRestart',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_MeExit',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_MeDelete',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_360Login',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_360GetTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_360Send',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_360GetMS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_360AddBlack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_360ReTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_360Exit',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SumaLogin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SumaGetTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SumaSend',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SumaGetMS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SumaAddBlack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SumaReTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_EmaLogin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_EmaGetTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_EmaSend',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_EmaGetMS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_EmaAddBlack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_EmaReTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_EmaExit',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_KJCLogin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_KJCGetTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_KJCSend',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_KJCGetMS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_KJCAddBlack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_KJCReTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SHLogin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SHGetTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SHSend',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SHGetMS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SHAddBlack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SHReTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_SHExit',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_YiKaLogin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_YiKaGetTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_YiKaSend',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_YiKaGetMS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_YiKaAddBlack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_YiKaReTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_YiKaExit',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_ALZLogin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_ALZGetTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_ALZSend',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_ALZGetMS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_ALZAddBlack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SMS_ALZReTEL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_ZipFile',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_UnZipFile',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_IsHijack',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_NumerToZH',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Csdyz_LoadCds',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_Csdyz_GetVcode',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FindUrlPath',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_MidS',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_MidEx',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_BaiduyunURL',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SendEmail',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_UnlockDel',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_DaemonON',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_DaemonKeep',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_DaemonOFF',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_PtrToNum',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_PtrToStr',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_PtrToBin',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_RndIdentify',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetIPbyName',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_IsOnline',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_ReadSelector',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FindSelector',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_SoftwTally',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FTP_Conn',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FTP_PutFile',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FTP_GetFile',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FTP_DelFile',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FTP_NewDir',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_FTP_RenFile',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetDllObject',true,true,false);
+    dp.SyntaxHighlighter.HighlightAll('code8_GetRefVal',true,true,false);
+
+</script>
+</body>
+</html>

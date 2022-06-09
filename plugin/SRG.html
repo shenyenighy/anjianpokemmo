@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>按键精灵插件帮助</title>
+<style>
+body{font-size:12px; font-family:Verdana,"宋体"}
+.ts{ background:#fff; margin:0 0 40px 0;}
+.ts th{ color:#7B797B; background:#DEDFDE; line-height:24px;}
+.ts td {padding:6px 0;}
+.name { font-size:16px; font-weight:bold; border-bottom:1px dashed #9C9A9C; color:#006939;}
+.canshu { background:#E7E7EF;}
+.red{ color:#d60000;}
+.fanhui{ border-bottom:1px dashed #9C9A9C;}
+.lizi{ border-bottom:1px dashed #9C9A9C;}
+</style></head><body>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="SetMode"></a>SetMode 模式设置
+</td></tr><tr><th>命令功能：</th><td>
+识别模式设置
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1 0:前台模式|1:GDI后台模式|2:DX后台
+参数2 窗口句柄(前台模式时设为0)
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式
+Plugin.SRG.SetMode 0,0
+
+//设置识别模式为GDI后台模式，后台窗口为Hwnd
+Hwnd=Plugin.Window.Foreground() 
+Plugin.SRG.SetMode 1,Hwnd
+</td></tr></table>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="GetHP"></a>GetHP 识别HP条长度(长度识别)
+</td></tr><tr><th>命令功能：</th><td>
+长度识别
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-4：形状参数，自动识别矩形、圆形和环形区域
+参数5：色彩描述，支持RGB/HSB色彩空间，可表达任意色彩组合
+参数6：[返回长度的百分比值]没有目标返回-1
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式(初始化设置一次即可，无需放在主循环)
+Plugin.SRG.SetMode 0,0
+
+//识别区域(x1,y1,x2,y2)内蓝色MP"H[230-250]"的长度
+x1=404:y1=399:x2=522:y2=415
+colordsc="H[230-250]"
+Plugin.SRG.GetHP x1,y1,x2,y2,colordsc,MP
+MessageBox "MP进度条长度:"&MP&"%"
+</td></tr></table>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="GetNum"></a>GetNum 数量识别
+</td></tr><tr><th>命令功能：</th><td>
+识别HP条长度
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-4：形状参数，自动识别矩形、圆形和环形区域
+参数5：色彩描述，支持RGB/HSB色彩空间，可表达任意色彩组合
+参数6：[返回识别到的数量]没有目标返回-1
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式(初始化设置一次即可，无需放在主循环)
+Plugin.SRG.SetMode 0,0
+
+//识别区域(x1,y1,x2,y2)内白色"FFFFFF-101010"目标的数量
+x1=885:y1=588:x2=985:y2=688
+colordsc="FFFFFF-101010"
+Plugin.SRG.GetNum x1,y1,x2,y2,colordsc,NUM 
+MessageBox "识别到的白色目标数量为:"&NUM&"个"
+</td></tr></table>
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="SRate"></a>SRate 信号率识别
+</td></tr><tr><th>命令功能：</th><td>
+万能信号率分析函数
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-4：形状参数，自动识别矩形、圆形和环形区域
+参数5：色彩描述，支持RGB/HSB色彩空间，可表达任意色彩组合
+参数6：[返回目标信号率的万分比值]没有目标返回-1
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式(初始化设置一次即可，无需放在主循环)
+Plugin.SRG.SetMode 0,0
+
+//检测区域(x1,y1,x2,y2)内白色"FFFFFF-101010"的信号率,对目标区域进行定性分析
+x1=2:y1=97:x2=82:y2=137
+colordsc="FFFFFF-101010"
+Plugin.SRG.SRate x1,y1,x2,y2,colordsc,SRATE 
+MessageBox "区域内白色信号率为:"&SRATE&"(万分比)"
+</td></tr></table>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="Position"></a>Position 定位
+</td></tr><tr><th>命令功能：</th><td>
+区域内色彩定位(FindColor加强版)
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-4：形状参数，自动识别矩形、圆形和环形区域
+参数5：色彩描述，支持RGB/HSB色彩空间，可表达任意色彩组合
+参数6-7：[返回目标的坐标(X,Y)]没有目标返回(-1,-1)
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式(初始化设置一次即可，无需放在主循环)
+Plugin.SRG.SetMode 0,0
+
+//定位区域(x1,y1,x2,y2)内白色"FFFFFF-101010"的中心位置
+x1=6:y1=5:x2=184:y2=143
+colordsc="FFFFFF-101010"
+Plugin.SRG.Position x1,y1,x2,y2,colordsc,X,Y 
+MessageBox "识别区域内白色的中心坐标为: ("&X&","&Y&")"
+</td></tr></table>
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="Direction"></a>Direction 方向识别
+</td></tr><tr><th>命令功能：</th><td>
+方向识别
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-4：形状参数，自动识别矩形、圆形和环形区域
+参数5：色彩描述，支持RGB/HSB色彩空间，可表达任意色彩组合
+参数6：[返回目标的方向]没有目标返回-1
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式(初始化设置一次即可，无需放在主循环)
+Plugin.SRG.SetMode 0,0
+
+//定位区域(x1,y1,x2,y2)内白色"FFFFFF-101010"的方向
+x1=6:y1=5:x2=184:y2=143
+colordsc="FFFFFF-101010"
+Plugin.SRG.Direction x1,y1,x2,y2,colordsc,DIRECTION
+MessageBox "识别到白颜色的方向角为:"&DIRECTION
+</td></tr></table>
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="XYtoDirection"></a>XYtoDirection 坐标方向转换
+</td></tr><tr><th>命令功能：</th><td>
+坐标方向转换
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-2：直角坐标系(X,Y)
+参数3：[返回坐标的方向角]范围0-360度
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//计算坐标(x1,y1)的方向角
+x1=1:y1=-1
+Plugin.SRG.XYtoDirection x1,y1,DIRECTION
+MessageBox "坐标(x1,y1)的方向角为:"&DIRECTION
+</td></tr></table>
+
+
+
+</body>
+</html>

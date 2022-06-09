@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>按键精灵插件帮助</title>
+<style>
+body{font-size:12px; font-family:Verdana,"宋体"}
+.ts{ background:#fff; margin:0 0 40px 0;}
+.ts th{ color:#7B797B; background:#DEDFDE; line-height:24px;}
+.ts td {padding:6px 0;}
+.name { font-size:16px; font-weight:bold; border-bottom:1px dashed #9C9A9C; color:#006939;}
+.canshu { background:#E7E7EF;}
+.red{ color:#d60000;}
+.fanhui{ border-bottom:1px dashed #9C9A9C;}
+.lizi{ border-bottom:1px dashed #9C9A9C;}
+</style></head><body>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="SetMode"></a>SetMode 模式设置
+</td></tr><tr><th>命令功能：</th><td>
+识别模式设置
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1 0:前台模式|1:GDI后台模式|2:DX后台
+参数2 窗口句柄(前台模式时设为0)
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+无
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式
+Plugin.SR.SetMode 0,0
+
+//设置识别模式为GDI后台模式，后台窗口为Hwnd
+Hwnd=Plugin.Window.Foreground() 
+Plugin.SR.SetMode 1,Hwnd
+</td></tr></table>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="SetLib"></a>SetLib 设置识别库
+</td></tr><tr><th>命令功能：</th><td>
+设置识别库
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1 识别库路径(相对路径或绝对路径)
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+返回设置识别库结果，字符串格式
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式为前台模式
+//设置识别库".\Plugin\SRLib.txt"
+Plugin.SR.SetMode 0,0
+STR=Plugin.SR.SetLib(".\Plugin\SRLib.txt")
+MessageBox STR
+</td></tr></table>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="ShapeRec"></a>ShapeRec 图形识别
+</td></tr><tr><th>命令功能：</th><td>
+识别指定范围内的图形
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-4：形状参数，自动识别矩形、圆形和环形区域
+参数5：色彩描述，支持RGB/HSB色彩空间，可表达任意色彩组合
+参数6：相似度，识别目标与识别库的相似程度
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+返回识别结果，字符串格式
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式、识别库
+Plugin.SR.SetMode 0,0
+Plugin.SR.SetLib ".\Plugin\SRLib.txt"
+//识别前台左上角区域内的图形(如电脑桌面：我的文档)
+x1=8:y1=34:x2=66:y2=133
+colordsc="FFFFFF-101010":similar=0.95
+STR=Plugin.SR.ShapeRec(x1,y1,x2,y2,colordsc,similar)
+MessageBox STR
+</td></tr></table>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="FindStr"></a>FindStr 查找字符串
+</td></tr><tr><th>命令功能：</th><td>
+查找指定范围内字符串的位置
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1-4：形状参数，自动识别矩形、圆形和环形区域
+参数5：色彩描述，支持RGB/HSB色彩空间，可表达任意色彩组合
+参数6：相似度，识别目标与识别库的相似程度
+参数7：待查找字符串
+参数8-9：返回查找到的字符串的坐标(X,Y)，没找到字符串则返回(-1,-1)
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+返回识别结果，字符串格式
+</td></tr><tr><th>脚本例子：<br /><span class="red">(8.x语法)</span>
+</th><td class="lizi"><pre>
+//设置识别模式、识别库
+Plugin.SR.SetMode 0,0
+Plugin.SR.SetLib ".\Plugin\SRLib.txt"
+//查找前台左上角区域内"我的文档"的坐标
+x1=8:y1=34:x2=66:y2=133
+colordsc="FFFFFF-101010":similar=0.95:strfind="我的文档"
+Plugin.SR.FindStr x1,y1,x2,y2,colordsc,similar,strfind,X,Y
+If X>=0 and Y>=0
+   MoveTo X,Y
+End If
+</td></tr></table>
+
+
+
+
+
+
+</body>
+</html>
